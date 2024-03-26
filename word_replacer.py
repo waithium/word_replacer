@@ -1,8 +1,11 @@
 #changes ever vowel in the input word to: 'uwu' for small letter/ 'UWU' for capital letter
 def translate(word):
     translated = ''
-    
-    # [' '+ c = c | c + uwu = cuwu | cuwu + t = cuwut]
+    '''
+    for eg:
+    input --> cat
+    ( ' ' + c = c | c + uwu = cuwu | cuwu + t = cuwut )
+    '''
     for letter in word:
         if letter in 'AEIOU':
             #capital vowel found
